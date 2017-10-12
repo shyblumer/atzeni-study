@@ -1,0 +1,187 @@
+html, body {
+  border: 0;
+  background-color: #353338;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.close {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.dropdown-box {
+  border: 1px solid #353338;
+  height: 60px;
+  text-align: center;
+  width: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-box:hover {
+  background-color: #EA504E;
+  border: 1px solid #EA504E;
+  border-top: 1px solid #353338;
+}
+
+.dropdown-box i {
+  color: white;
+  font-size: 16px;
+  padding-top: 22px;
+}
+
+.dropdown-hide {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .215s visibility .215s;
+  transition: opacity .215s visibility .215s;
+}
+
+.iPhone_1 {
+  background: url("../images/iPhone_1.jpg") no-repeat center;
+  background-size: cover;
+  float: left;
+  height: 100%;
+  width: 25%;
+}
+
+.iPhone_2 {
+  background: url("../images/iPhone_2.jpg") no-repeat center;
+  background-size: cover;
+  float: left;
+  height: 100%;
+  width: 25%;
+}
+
+.iPhone_3 {
+  background: url("../images/iPhone_3.jpg") no-repeat center;
+  background-size: cover;
+  float: left;
+  height: 100%;
+  width: 25%;
+}
+
+.iPhone_4 {
+  background: url("../images/iPhone_4.jpg") no-repeat center;
+  background-size: cover;
+  float: left;
+  height: 100%;
+  width: 25%;
+}
+
+@media (min-width:801px) and (max-width: 1200px) {
+
+  .iPhone_1 {
+    height: 50%;
+    width: 50%;
+  }
+
+  .iPhone_2 {
+    height: 50%;
+    width: 50%;
+  }
+
+  .iPhone_3 {
+    height: 50%;
+    width: 50%;
+  }
+
+  .iPhone_4 {
+    height: 50%;
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .iPhone_1 {
+    width: 100%;
+  }
+
+  .iPhone_2 {
+    width: 100%;
+  }
+
+  .iPhone_3 {
+    width: 100%;
+  }
+
+  .iPhone_4 {
+    width: 100%;
+  }
+
+}
+
+.sidebar {
+  background-color: #2A282C;
+  float: left;
+  height: 100%;
+  position: relative;
+  width: 60px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.main {
+  background-color:lightblue;
+  height: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: calc(100% - 60px);
+}
+
+.menu-box img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 16px;
+  height: 16px;
+  -webkit-transition: -webkit-transform .25s ease-out 0s;
+  transition: transform .25s ease-out 0s;
+}
+
+.menu-box {
+  display: table;
+  height: 60px;
+  position: relative;
+  width: 60px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.menu-box:hover {
+  background-color: #EA504E;
+}
+
+.menu-box-open {
+  background-color: #EA504E;
+}
+
+.rotate {
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
