@@ -10,16 +10,24 @@
 
     <script src="https://use.fontawesome.com/607a1e9697.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/loader.js"></script>
     <script src="js/menu.js"></script>
 
     <title>Atzeni Portfolio Study</title>
 
   </head>
   <body>
+    <div id="loader" class="loader">
+      <span id="loader-line" class="loader-line">
+        <span id="loader-percentage" class="loader-percentage"></span>
+      </span>
+
+    </div>
+
     <div class="container">
 
       <div class="sidebar">
-        <a class="menu-nav" href="#">
+        <a class="menu-nav">
           <div id="menu-box" class="menu-box">
             <img id="hamburger" src="images/menu-open.png">
           </div>
@@ -46,13 +54,13 @@
       </div>
 
       <div class ="main">
-          <div class="iPhone_1">
+          <div class="front" style="background-image: url('images/iPhone_1.jpg');">
           </div>
-          <div class="iPhone_2">
+          <div class="front" style="background-image: url('images/iPhone_2.jpg');">
           </div>
-          <div class="iPhone_3">
+          <div class="front" style="background-image: url('images/iPhone_3.jpg');">
           </div>
-          <div class="iPhone_4">
+          <div class="front" style="background-image: url('images/iPhone_4.jpg');">
           </div>
       </div>
     </div>

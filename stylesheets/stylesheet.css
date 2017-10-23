@@ -51,56 +51,46 @@ html, body {
   transition: opacity .215s visibility .215s;
 }
 
-.iPhone_1 {
-  background: url("../images/iPhone_1.jpg") no-repeat center;
+.front {
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   float: left;
   height: 100%;
   width: 25%;
 }
 
-.iPhone_2 {
-  background: url("../images/iPhone_2.jpg") no-repeat center;
-  background-size: cover;
-  float: left;
+.loader {
+  background-color: #252328;
   height: 100%;
-  width: 25%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 990;
 }
 
-.iPhone_3 {
-  background: url("../images/iPhone_3.jpg") no-repeat center;
-  background-size: cover;
-  float: left;
-  height: 100%;
-  width: 25%;
+.loader-line {
+  background-color: #EA504E;
+  height: 0;
+  left: 50%;
+  position: absolute;
+  width: 2px;
+  z-index: 991;
 }
 
-.iPhone_4 {
-  background: url("../images/iPhone_4.jpg") no-repeat center;
-  background-size: cover;
-  float: left;
-  height: 100%;
-  width: 25%;
+.loader-percentage {
+  bottom: 16px;
+  left: 15px;
+  color: #FFF;
+  position: absolute;
+  z-index: 992;
 }
 
 @media (min-width:801px) and (max-width: 1200px) {
 
-  .iPhone_1 {
-    height: 50%;
-    width: 50%;
-  }
-
-  .iPhone_2 {
-    height: 50%;
-    width: 50%;
-  }
-
-  .iPhone_3 {
-    height: 50%;
-    width: 50%;
-  }
-
-  .iPhone_4 {
+  .front {
     height: 50%;
     width: 50%;
   }
@@ -109,19 +99,7 @@ html, body {
 
 @media (max-width: 800px) {
 
-  .iPhone_1 {
-    width: 100%;
-  }
-
-  .iPhone_2 {
-    width: 100%;
-  }
-
-  .iPhone_3 {
-    width: 100%;
-  }
-
-  .iPhone_4 {
+  .front {
     width: 100%;
   }
 
@@ -131,7 +109,7 @@ html, body {
   background-color: #2A282C;
   float: left;
   height: 100%;
-  position: relative;
+  position: fixed;
   width: 60px;
   margin: 0;
   padding: 0;
@@ -142,7 +120,7 @@ html, body {
   background-color:lightblue;
   height: 100%;
   float: left;
-  margin: 0;
+  margin-left: 60px;
   padding: 0;
   width: calc(100% - 60px);
 }
