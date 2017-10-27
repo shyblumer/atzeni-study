@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+  $("#container").hide();
   //Loading Page
   var pageLoader = function() {
 
@@ -15,10 +16,9 @@ $(document).ready(function() {
      var $loadPercentageLine = $('#loader-line');
      var $loadPercentageText = $('#loader-percentage');
      var elementsLoaded = 0;
-     var speed = 5000;
+     var speed = 2000;
 
      var animatePercentage = function(e) {
-       console.log(e);
        $loadPercentageText.text(parseInt(e));
 
      };
@@ -42,13 +42,20 @@ $(document).ready(function() {
     };
 
     if($elements.length) {
-      loading();
 
       $elements.each(function() {
         elementsLoaded++;
         loading();
       });
+
+      $loadPercentageText.promise().done(function() {
+        $loading.fadeOut("slow", function() {
+          $(this).css({"display": "none"});
+          $("#container").fadeIn(1500);
+        });
+      });
     }
+
   };
 
   pageLoader();
