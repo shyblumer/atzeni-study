@@ -5,12 +5,27 @@ $(document).ready(function() {
 
     if ( $("#hamburger").hasClass("rotate")) {
       $("#hamburger").removeClass("rotate");
-      $("#dropdown-content").addClass("dropdown-hide");
       $("#menu-box").removeClass("menu-box-open");
+      $('.dropdown').animate({
+        top: '-180px'
+      }, 400);
     } else {
       $("#hamburger").addClass('rotate');
-      $("#dropdown-content").removeClass("dropdown-hide");
       $('#menu-box').addClass("menu-box-open");
+      $('.dropdown').animate({
+        top: '60px'
+      }, 400);
     }
   });
+
+  // Blog Category Dropdown Menu
+
+  $(".header-dropdown").click(function() {
+    if($('.categories').is(':hidden')) {
+      $(".categories").slideDown();
+    } else {
+      $(".categories").slideUp();
+    }
+  });
+
 });
