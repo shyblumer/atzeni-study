@@ -21,15 +21,15 @@
 
     <div id="container" class="container">
 
+      <!-- Sidebar -->
+
       <div class="sidebar">
-        <a class="menu-nav">
-          <div id="menu-box" class="menu-box">
-            <img id="hamburger" src="images/menu-open.png">
-          </div>
-        </a>
+        <div id="menu-box" class="menu-box">
+          <img id="hamburger" src="images/menu-open.png">
+        </div>
         <div class="dropdown">
           <div id="dropdown-content" class="dropdown-hide">
-            <a href="#">
+            <a href="about.html">
               <div class="dropdown-box">
                 <i class="fa fa-user-circle" aria-hidden="true"></i>
               </div>
@@ -39,7 +39,7 @@
                 <i class="fa fa-book" aria-hidden="true"></i>
               </div>
             </a>
-            <a href="#">
+            <a href="#" id="contactLink">
               <div class="dropdown-box">
                 <i class="fa fa-at" aria-hidden="true"></i>
               </div>
@@ -50,6 +50,8 @@
           <a href="index.html"><img src="images/logo.jpg" /></a>
         </div>
       </div>
+
+      <!-- Blog Categories-->
 
       <div class ="main">
           <div class="header">
@@ -67,94 +69,160 @@
 
           <div class="categories">
             <ul>
-              <li>All</li>
-              <li>Angular</li>
-              <li>CSS</li>
-              <li>Express</li>
-              <li>Javascript</li>
-              <li>MongoDB</li>
-              <li>Node</li>
+              <li class="categorySelection" id="all">All</li>
+              <li class="categorySelection" id="angular">Angular</li>
+              <li class="categorySelection" id="css">CSS</li>
+              <li class="categorySelection" id="express">Express</li>
+              <li class="categorySelection" id="javascript">Javascript</li>
+              <li class="categorySelection" id="mongodb">MongoDB</li>
+              <li class="categorySelection" id="node">Node</li>
             </ul>
           </div>
+          <div class="blog-container">
 
-          <a href="#">
-            <div class="blog-topic">
+            <div class="blog-topic javascript">
               <h2>Lorem – Ipsum Dolor Sit Amet Vestibulum Orci</h2>
               <span class="date">OCTOBER 28, 2017 / JAVASCRIPT</span>
             </div>
-          </a>
 
-          <a href="#">
-            <div class="blog-topic">
+            <div class="blog-topic angular">
               <h2>Orquent – Ornare Quisque Natoque Mauris Lorem Nam Nibh Pellentesque</h2>
               <span class="date">OCTOBER 25, 2017 / ANGULAR</span>
             </div>
-          </a>
 
-          <a href="#">
-            <div class="blog-topic">
+            <div class="blog-topic css">
               <h2>Cras Mattis – Fusce Vestibulum Elit</h2>
               <span class="date">OCTOBER 10, 2017 / CSS</span>
             </div>
-          </a>
 
-          <a href="#">
-            <div class="blog-topic">
+            <div class="blog-topic mongodb">
               <h2>Fusce Vestibulum Elit – Conubia Cras Ante Fringilla Malesuada Orci</h2>
               <span class="date">SEPTEMBER 6, 2017 / MONGODB</span>
             </div>
-          </a>
 
-          <a href="#">
-            <div class="blog-topic">
+            <div class="blog-topic node">
               <h2>Vel Ipsum – In Sed Velit Magna Dignissim At Wisi Temporibus</h2>
               <span class="date">SEPTEMBER 1, 2017 / NODE</span>
             </div>
-          </a>
 
-          <a href="#">
-            <div class="blog-topic">
+            <div class="blog-topic express">
               <h2>Muris Torquent Eu Lectus – Turpis Fusce Neque Mauris</h2>
               <span class="date">AUGUST 21, 2017 / EXPRESS</span>
             </div>
-          </a>
 
-          <a href="#">
-            <div class="blog-topic">
+            <div class="blog-topic node">
               <h2>Aliquam – Eleifend Libero Tincidunt Dui Pede Non Gravida</h2>
               <span class="date">AUGUST 19, 2017 / NODE</span>
             </div>
-          </a>
 
-          <a href="#">
-            <div class="blog-topic">
+            <div class="blog-topic css">
               <h2>At Elementum – Vestibulum Nulla Quam Curabitur Pellentesque</h2>
               <span class="date">AUGUST 10, 2017 / CSS</span>
             </div>
-          </a>
 
-          <a href="#">
-            <div class="blog-topic">
+            <div class="blog-topic javascript">
               <h2>Maecenas – Eleifend Libero Tincidunt Dui Pede Non Gravida</h2>
               <span class="date">AUGUST 2, 2017 / JAVASCRIPT</span>
             </div>
-          </a>
 
-          <a href="#">
-            <div class="blog-topic">
+            <div class="blog-topic css">
               <h2>Bibendum – Ut Pulvinar Magna Vestibulum Nulla Illo</h2>
               <span class="date">JULY 27, 2017 / CSS</span>
             </div>
-          </a>
 
-          <a href="#">
-            <div class="blog-topic">
+            <div class="blog-topic mongodb">
               <h2>Malesuada Libero – Pede Vitae Proin Blandit Duis</h2>
               <span class="date">JULY 26, 2017 / MONGODB</span>
             </div>
-          </a>
 
+            <div class="blog-topic node">
+              <h2>Amet - Id Consectetuer Libero Fames Nunc</h2>
+              <span class="date">JULY 15, 2017 / NODE</span>
+            </div>
+
+            <div class="blog-topic javascript">
+              <h2>Ad Rutrum - Vitae Sed Nec Molestie Enim</h2>
+              <span class="date">JULY 8, 2017 / JAVASCRIPT</span>
+            </div>
+
+            <div class="blog-topic express">
+              <h2>Debitis Orci - Sodales Suspendisse Explicabo Vehicula Sed</h2>
+              <span class="date">JULY 7, 2017 / EXPRESS</span>
+            </div>
+
+            <div class="blog-topic angular">
+              <h2>Felis Luctus - Luctus Nullam Sem Eget Hendrerit</h2>
+              <span class="date">JULY 1, 2017 / ANGULAR</span>
+            </div>
+
+            <div class="blog-topic angular">
+              <h2>Pede Magna - Sint Fringilla Sit Risus</h2>
+              <span class="date">JUNE 27, 2017 / ANGULAR</span>
+            </div>
+
+            <div class="blog-topic express">
+              <h2>Malesuada Libero – Pede Vitae Proin Blandit Duis</h2>
+              <span class="date">JUNE 10, 2017 / EXPRESS</span>
+            </div>
+
+            <div class="blog-topic express">
+              <h2>Nibh Viverra - Suspendisse Dignissim Porttitor Diam Ullamcorper Erat Magna</h2>
+              <span class="date">JUNE 2, 2017 / EXPRESS</span>
+            </div>
+
+            <div class="blog-topic angular">
+              <h2>Sapien Facilisi - Amet Ipsum Venenatis</h2>
+              <span class="date">MAY 28, 2017 / ANGULAR</span>
+            </div>
+
+            <div class="blog-topic mongodb">
+              <h2>Vel Sem - Rutrum Egestas Blandit Dolor Sit</h2>
+              <span class="date">MAY 22, 2017 / MONGODB</span>
+            </div>
+
+            <div class="blog-topic node">
+              <h2>Convallis Scelerisque - Sit Mauris Ratione Enim Class</h2>
+              <span class="date">MAY 14, 2017 / NODE</span>
+            </div>
+
+            <div class="blog-topic css">
+              <h2>Tortor - Ut Felis Deserunt Tellus Morbi Volutpat</h2>
+              <span class="date">MAY 7, 2017 / CSS</span>
+            </div>
+
+          </div>
+      </div>
+
+    </div>
+
+    <!-- Contact Pop-Up -->
+
+    <div id="contact" class="contact">
+
+      <div class="aboutHeader">
+        <a href="#" id="contactExit">
+          <div class="header-exit">
+            <img src="images/exit.png">
+          </div>
+        </a>
+      </div>
+
+      <div class="contactContainer">
+        <div class="contactEmail">
+          <a href="mailto:jaredgblumer@gmail.com">jaredgblumer<span class="color-text">@</span>gmail.com</a>
+        </div>
+        <div class="contactLine">
+          <p> — </p>
+        </div>
+        <div class="contactSocialMedia">
+          <ul class="contact-social-media">
+            <li><a href="https://twitter.com/jaredblumer" target="_blank">TWITTER</a></li>
+            <li><a href="https://github.com/jaredblumer/" target="_blank">GITHUB</a></li>
+            <li><a href="mailto:jaredgblumer@gmail.com">EMAIL</a></li>
+          </ul>
+        </div>
       </div>
     </div>
+
   </body>
 </html>
