@@ -1,4 +1,4 @@
-# atzeniStudy
+# atzeni-study
 
 Design study and reverse engineering of Alessio Atzeni's portfolio site.
 
