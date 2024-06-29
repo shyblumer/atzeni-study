@@ -1,101 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheets/stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400"
-      rel="stylesheet">
-
-    <script src="https://use.fontawesome.com/607a1e9697.js"></script>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/loader.js"></script>
-    <script src="js/menu.js"></script>
-
-    <title>Atzeni Portfolio Study</title>
-
-  </head>
-  <body>
-    <div id="loader" class="loader">
-      <span id="loader-line" class="loader-line">
-        <span id="loader-percentage" class="loader-percentage"></span>
-      </span>
-
-    </div>
-
-    <div id="container" class="container">
-
-      <div class="sidebar">
-        <div id="menu-box" class="menu-box">
-            <img id="hamburger" src="images/menu-open.png">
-        </div>
-        <div class="dropdown">
-          <div id="dropdown-content" class="dropdown-hide">
-            <a href="about.html">
-              <div class="dropdown-box">
-                <i class="fa fa-user-circle" aria-hidden="true"></i>
-              </div>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+      <link rel="stylesheet" href="stylesheets/stylesheet.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400"
+         rel="stylesheet">
+      <script src="https://use.fontawesome.com/607a1e9697.js"></script>
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/loader.js"></script>
+      <script src="js/menu.js"></script>
+      <title>Atzeni Portfolio Study</title>
+   </head>
+   <body>
+      <div id="loader" class="loader">
+         <span id="loader-line" class="loader-line">
+         <span id="loader-percentage" class="loader-percentage"></span>
+         </span>
+      </div>
+      <div id="container" class="container">
+         <div class="sidebar">
+            <div id="menu-box" class="menu-box">
+               <img id="hamburger" src="images/menu-open.png">
+            </div>
+            <div class="dropdown">
+               <div id="dropdown-content" class="dropdown-hide">
+                  <a href="about.html">
+                     <div class="dropdown-box">
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                     </div>
+                  </a>
+                  <a href="blog.html">
+                     <div class="dropdown-box">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                     </div>
+                  </a>
+                  <a href="#" id="contactLink">
+                     <div class="dropdown-box">
+                        <i class="fa fa-at" aria-hidden="true"></i>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="logo">
+               <a href="index.html"><img src="images/logo.jpg" /></a>
+            </div>
+         </div>
+         <div class ="main">
+            <div class="front" style="background-image: url('images/iPhone_1.jpg');">
+            </div>
+            <div class="front" style="background-image: url('images/iPhone_2.jpg');">
+            </div>
+            <div class="front" style="background-image: url('images/iPhone_3.jpg');">
+            </div>
+            <div class="front" style="background-image: url('images/iPhone_4.jpg');">
+            </div>
+         </div>
+      </div>
+      <!-- Contact Pop-Up -->
+      <div id="contact" class="contact">
+         <div class="aboutHeader">
+            <a href="#" id="contactExit">
+               <div class="header-exit">
+                  <img src="images/exit.png">
+               </div>
             </a>
-            <a href="blog.html">
-              <div class="dropdown-box">
-                <i class="fa fa-book" aria-hidden="true"></i>
-              </div>
-            </a>
-            <a href="#" id="contactLink">
-              <div class="dropdown-box">
-                <i class="fa fa-at" aria-hidden="true"></i>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="logo">
-          <a href="index.html"><img src="images/logo.jpg" /></a>
-        </div>
+         </div>
+         <div class="contactContainer">
+            <div class="contactEmail">
+               <a href="mailto:shyblumer@protonmail.com">shyblumer<span class="color-text">@</span>protonmail.com</a>
+            </div>
+            <div class="contactLine">
+               <p> — </p>
+            </div>
+            <div class="contactSocialMedia">
+               <ul class="contact-social-media">
+                  <li><a href="https://www.linkedin.com/in/shyblumer/" target="_blank">LINKEDIN</a></li>
+                  <li><a href="https://github.com/shyblumer/" target="_blank">GITHUB</a></li>
+                  <li><a href="mailto:shyblumer@protonmail.com">EMAIL</a></li>
+               </ul>
+            </div>
+         </div>
       </div>
-
-      <div class ="main">
-          <div class="front" style="background-image: url('images/iPhone_1.jpg');">
-          </div>
-          <div class="front" style="background-image: url('images/iPhone_2.jpg');">
-          </div>
-          <div class="front" style="background-image: url('images/iPhone_3.jpg');">
-          </div>
-          <div class="front" style="background-image: url('images/iPhone_4.jpg');">
-          </div>
-      </div>
-    </div>
-
-    <!-- Contact Pop-Up -->
-
-    <div id="contact" class="contact">
-
-      <div class="aboutHeader">
-        <a href="#" id="contactExit">
-          <div class="header-exit">
-            <img src="images/exit.png">
-          </div>
-        </a>
-      </div>
-
-      <div class="contactContainer">
-        <div class="contactEmail">
-          <a href="mailto:jaredgblumer@gmail.com">jaredgblumer<span class="color-text">@</span>gmail.com</a>
-        </div>
-        <div class="contactLine">
-          <p> — </p>
-        </div>
-        <div class="contactSocialMedia">
-          <ul class="contact-social-media">
-            <li><a href="https://twitter.com/jaredblumer" target="_blank">TWITTER</a></li>
-            <li><a href="https://github.com/jaredblumer/" target="_blank">GITHUB</a></li>
-            <li><a href="mailto:jaredgblumer@gmail.com">EMAIL</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </body>
+   </body>
 </html>
