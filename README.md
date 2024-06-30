@@ -34,6 +34,12 @@ To run this project locally:
 - **CSS3**: Styling and responsive design.
 - **JavaScript**: Enhancements and interactivity.
 
+## Author
+**Shy Blumer** (they/them), Full-Stack Software Engineer and Data Analyst 🏳️‍🌈🏳️‍⚧️  
+- [GitHub](https://github.com/shyblumer)
+- [LinkedIn](https://www.linkedin.com/in/shyblumer/)
+- [Résumé](https://www.imshy.net/resume)
+
 ## Acknowledgments
 
 - Special thanks to [Alessio Atzeni](https://www.alessioatzeni.com/) for the original design inspiration.
